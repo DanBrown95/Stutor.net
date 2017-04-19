@@ -1,0 +1,27 @@
+﻿@model IEnumerable<StutorDataObjects.Class>
+
+@{
+    ViewBag.Title = "Classes Being Tutored";
+}
+
+<h2>Classes being tutored by this tutor</h2>
+
+<div>
+	<hr />
+    @foreach (var c in Model)
+    {
+        <dl class="dl-horizontal">
+        <dt>
+           Class Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => c.Name)
+        </dd>
+    </dl>
+    }
+    
+</div>
+<p>
+    @Html.ActionLink("Back to active tutors", "Index")
+</p>

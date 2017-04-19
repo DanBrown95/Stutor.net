@@ -1,0 +1,29 @@
+﻿<Window x:Class="LoginScreen.NewStudentRequest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginScreen"
+        mc:Ignorable="d"
+        Title="NewStudentRequest" Height="400" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblHeader" Content="What action would you like to take for this appointment?" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
+        <Label x:Name="lblStudent" Content="Student Name" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="17"/>
+        <Label x:Name="lblSubjectName" Content="Subject name" Grid.Row="3" Grid.ColumnSpan="2" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="17"/>
+        <Label x:Name="lblDateTime" Content="Date and Time" Grid.Row="4" Grid.ColumnSpan="2" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="17"/>
+        <Button x:Name="btnAccept" Content="Accept" Grid.Row="5" Grid.Column="0" Margin="35 15" Click="btnAccept_Click"/>
+        <Button x:Name="btnDecline" Content="Decline" Grid.Row="5" Grid.Column="1" Margin="35 15" Click="btnDecline_Click"/>
+    </Grid>
+</Window>

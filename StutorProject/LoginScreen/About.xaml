@@ -1,0 +1,30 @@
+﻿<Window x:Class="LoginScreen.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginScreen"
+        mc:Ignorable="d"
+        Title="About" Height="400" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="imgLogo" Grid.Row="0" Grid.Column="0" Source="pack://siteoforigin:,,,/Resources/gradCap.png" Margin="0 0 80 0"/>
+        <Label x:Name="lblHeader" Grid.Row="0" Grid.ColumnSpan="2" Content="Stutor Learning" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"/>
+        <Label x:Name="lblAboutTitle" Grid.Row="2" Grid.ColumnSpan="2" Content="Stutor Learning 2016" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label x:Name="lblAboutVersion" Grid.Row="3" Grid.ColumnSpan="2" Content="Version 1.0.100 Update 1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Label x:Name="lblAboutCopyright" Grid.Row="4" Grid.ColumnSpan="2" Content="© 2016 Stutor Learning Corporation" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Button x:Name="btnOK" Grid.Row="6" Content="OK" Grid.ColumnSpan="2" Margin="120 10" IsCancel="True"/>
+    </Grid>
+</Window>

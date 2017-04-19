@@ -1,0 +1,12 @@
+C:\Users\wolfb\Dropbox\2016-17\Fall\dotNet2\Final\StutorProject\StutorDataObjects\bin\Debug\StutorDataObjects.dll
+C:\Users\wolfb\Dropbox\2016-17\Fall\dotNet2\Final\StutorProject\StutorDataObjects\bin\Debug\StutorDataObjects.pdb
+C:\Users\wolfb\Dropbox\2016-17\Fall\dotNet2\Final\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.dll
+C:\Users\wolfb\Dropbox\2016-17\Fall\dotNet2\Final\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.pdb
+G:\DanBrownStutorFinal\Final\StutorProject\StutorDataObjects\bin\Debug\StutorDataObjects.dll
+G:\DanBrownStutorFinal\Final\StutorProject\StutorDataObjects\bin\Debug\StutorDataObjects.pdb
+G:\DanBrownStutorFinal\Final\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.dll
+G:\DanBrownStutorFinal\Final\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.pdb
+C:\Users\wolfb\Dropbox\2016-17\Spring\DotNet3\DanBrownStutorFinal\Final\StutorProject\StutorDataObjects\bin\Debug\StutorDataObjects.dll
+C:\Users\wolfb\Dropbox\2016-17\Spring\DotNet3\DanBrownStutorFinal\Final\StutorProject\StutorDataObjects\bin\Debug\StutorDataObjects.pdb
+C:\Users\wolfb\Dropbox\2016-17\Spring\DotNet3\DanBrownStutorFinal\Final\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.dll
+C:\Users\wolfb\Dropbox\2016-17\Spring\DotNet3\DanBrownStutorFinal\Final\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.pdb

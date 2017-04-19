@@ -1,0 +1,89 @@
+﻿@model StutorDataObjects.TutorAppointments
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Drop Appointment</title>
+</head>
+<body>
+    <h3>Are you sure you no longer wish to be tutored in this session?</h3>
+    <div>
+        <h4>Tutor Appointment</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                Day
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Day)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Time)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Time)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.SubjectName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.SubjectName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TutorFirstname)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TutorFirstname)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TutorLastname)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TutorLastname)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Status)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Status)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Drop" class="btn btn-default" /> |
+                @Html.ActionLink("Back to Appointments", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>

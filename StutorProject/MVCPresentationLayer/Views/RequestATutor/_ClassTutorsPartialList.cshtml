@@ -1,0 +1,35 @@
+﻿@model IEnumerable<MVCPresentationLayer.Models.ClassTutorsViewModel>
+
+<table class="table">
+    <tr>
+        <th>
+            Tutor's Firstname
+        </th>
+        <th>
+            Tutor's Lastname
+        </th>
+        <th>
+            Tutor's Email
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.firstname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.lastname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            <td>
+                @Html.ActionLink("Request", "Edit", new { id = item.userID }) 
+            </td>
+        </tr>
+    }
+
+</table>

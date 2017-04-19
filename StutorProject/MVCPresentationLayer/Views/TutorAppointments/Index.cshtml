@@ -1,0 +1,77 @@
+﻿@model List<StutorDataObjects.TutorAppointments>
+
+@{
+    ViewBag.Title = "Tutor Appointments";
+}
+
+<p>
+
+</p>
+
+@if (Model == null || Model.Count == 0)
+{
+    <h2>You are currently not being tutored for any classes! </h2>
+}
+else
+{
+    <h2>Classes you currently have a tutor for:</h2>
+    <table class="table">
+        <tr>
+            <th>
+                Day
+            </th>
+            <th>
+                Time
+            </th>
+            <th>
+                Subject Name
+            </th>
+            <th>
+                Tutor's First Name
+            </th>
+            <th>
+                Tutor's Last Name
+            </th>
+            <th>
+                Status
+            </th>
+            <th>
+                Tutoring Request ID
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Day)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Time)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SubjectName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TutorFirstname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TutorLastname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TutoringRequestID)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                    @Html.ActionLink("Drop", "Delete", new { id = item.ID })
+                </td>
+            </tr>
+        }
+
+    </table>
+}

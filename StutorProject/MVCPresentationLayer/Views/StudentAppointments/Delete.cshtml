@@ -1,0 +1,80 @@
+﻿@model StutorDataObjects.StudentAppointments
+
+@{
+    ViewBag.Title = "Drop";
+}
+
+<h2>Confirm Drop?</h2>
+
+<h3>Are you sure you want to drop this appointment?</h3>
+<div>
+    <h4>Student Appointments</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Day)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Day)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SubjectName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SubjectName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentFirstname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentFirstname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentLastname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentLastname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TutoringRequestID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TutoringRequestID)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

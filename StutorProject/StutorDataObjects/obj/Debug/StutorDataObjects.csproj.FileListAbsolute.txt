@@ -10,3 +10,7 @@ C:\Users\wolfb\Dropbox\2016-17\Spring\DotNet3\DanBrownStutorFinal\Final\StutorPr
 C:\Users\wolfb\Dropbox\2016-17\Spring\DotNet3\DanBrownStutorFinal\Final\StutorProject\StutorDataObjects\bin\Debug\StutorDataObjects.pdb
 C:\Users\wolfb\Dropbox\2016-17\Spring\DotNet3\DanBrownStutorFinal\Final\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.dll
 C:\Users\wolfb\Dropbox\2016-17\Spring\DotNet3\DanBrownStutorFinal\Final\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.pdb
+C:\Users\nh229u23\Desktop\New folder\stutor\StutorProject\StutorDataObjects\bin\Debug\StutorDataObjects.dll
+C:\Users\nh229u23\Desktop\New folder\stutor\StutorProject\StutorDataObjects\bin\Debug\StutorDataObjects.pdb
+C:\Users\nh229u23\Desktop\New folder\stutor\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.dll
+C:\Users\nh229u23\Desktop\New folder\stutor\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.pdb

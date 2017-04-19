@@ -19,3 +19,10 @@ C:\Users\wolfb\Dropbox\2016-17\Spring\DotNet3\DanBrownStutorFinal\Final\StutorPr
 C:\Users\wolfb\Dropbox\2016-17\Spring\DotNet3\DanBrownStutorFinal\Final\StutorProject\StutorDataAccess\obj\Debug\StutorDataAccess.csprojResolveAssemblyReference.cache
 C:\Users\wolfb\Dropbox\2016-17\Spring\DotNet3\DanBrownStutorFinal\Final\StutorProject\StutorDataAccess\obj\Debug\StutorDataAccess.dll
 C:\Users\wolfb\Dropbox\2016-17\Spring\DotNet3\DanBrownStutorFinal\Final\StutorProject\StutorDataAccess\obj\Debug\StutorDataAccess.pdb
+C:\Users\nh229u23\Desktop\New folder\stutor\StutorProject\StutorDataAccess\bin\Debug\StutorDataAccess.dll
+C:\Users\nh229u23\Desktop\New folder\stutor\StutorProject\StutorDataAccess\bin\Debug\StutorDataAccess.pdb
+C:\Users\nh229u23\Desktop\New folder\stutor\StutorProject\StutorDataAccess\bin\Debug\StutorDataObjects.dll
+C:\Users\nh229u23\Desktop\New folder\stutor\StutorProject\StutorDataAccess\bin\Debug\StutorDataObjects.pdb
+C:\Users\nh229u23\Desktop\New folder\stutor\StutorProject\StutorDataAccess\obj\Debug\StutorDataAccess.csprojResolveAssemblyReference.cache
+C:\Users\nh229u23\Desktop\New folder\stutor\StutorProject\StutorDataAccess\obj\Debug\StutorDataAccess.dll
+C:\Users\nh229u23\Desktop\New folder\stutor\StutorProject\StutorDataAccess\obj\Debug\StutorDataAccess.pdb

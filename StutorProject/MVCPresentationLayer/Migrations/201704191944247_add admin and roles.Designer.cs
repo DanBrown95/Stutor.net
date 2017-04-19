@@ -7,13 +7,13 @@ namespace MVCPresentationLayer.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class AddAdminUser : IMigrationMetadata
+    public sealed partial class addadminandroles : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddAdminUser));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(addadminandroles));
         
         string IMigrationMetadata.Id
         {
-            get { return "201704191808428_Add Admin User"; }
+            get { return "201704191944247_add admin and roles"; }
         }
         
         string IMigrationMetadata.Source

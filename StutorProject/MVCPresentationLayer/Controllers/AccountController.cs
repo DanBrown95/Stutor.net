@@ -22,7 +22,7 @@ namespace MVCPresentationLayer.Controllers
         {
         }
 
-        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
+        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
         {
             UserManager = userManager;
             SignInManager = signInManager;
@@ -34,9 +34,9 @@ namespace MVCPresentationLayer.Controllers
             {
                 return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
             }
-            private set 
-            { 
-                _signInManager = value; 
+            private set
+            {
+                _signInManager = value;
             }
         }
 
@@ -120,7 +120,7 @@ namespace MVCPresentationLayer.Controllers
             // If a user enters incorrect codes for a specified amount of time then the user account 
             // will be locked out for a specified amount of time. 
             // You can configure the account lockout settings in IdentityConfig
-            var result = await SignInManager.TwoFactorSignInAsync(model.Provider, model.Code, isPersistent:  model.RememberMe, rememberBrowser: model.RememberBrowser);
+            var result = await SignInManager.TwoFactorSignInAsync(model.Provider, model.Code, isPersistent: model.RememberMe, rememberBrowser: model.RememberBrowser);
             switch (result)
             {
                 case SignInStatus.Success:
@@ -154,12 +154,21 @@ namespace MVCPresentationLayer.Controllers
                 StutorLogicLayer.UserManager uManager = new StutorLogicLayer.UserManager();
                 StutorDataObjects.User usr = null;
 
-                try{
-                    if(true == uManager.AuthenticateUser(model.Email, model.Password)){
+                try
+                {
+                    if (true == uManager.AuthenticateUser(model.Email, model.Password))
+                    {
                         usr = uManager.GetIndividualStudent(model.Email);
                     }
-                }catch(Exception){
-                    ViewBag.Message ="Invalid registration. Bad username or password";
+                    else
+                    {
+                        ViewBag.Message = "Invalid registration. Bad username or password";
+                        return View();
+                    }
+                }
+                catch (Exception)
+                {
+                    ViewBag.Message = "Invalid registration. Bad username or password";
                     return View();
                 }
 
@@ -168,8 +177,8 @@ namespace MVCPresentationLayer.Controllers
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    
+                    await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
+
                     // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
                     // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
@@ -181,21 +190,20 @@ namespace MVCPresentationLayer.Controllers
                     UserManager.AddClaim(user.Id, new Claim(ClaimTypes.GivenName, usr.firstname));
                     UserManager.AddClaim(user.Id, new Claim(ClaimTypes.Surname, usr.lastname));
 
-                    
-                        switch (usr.role)
-                        {
-                            case "Employee":
-                                UserManager.AddToRole(user.Id, "Employee");
-                                break;
-                            case "Tutor":
-                                UserManager.AddToRole(user.Id, "Tutor");
-                                break;
-                            case "Student":
-                                UserManager.AddToRole(user.Id, "Student");
-                                break;
-                            default:
-                                break;
-                        }
+                    switch (usr.role)
+                    {
+                        case "Employee":
+                            UserManager.AddToRole(user.Id, "Employee");
+                            break;
+                        case "Tutor":
+                            UserManager.AddToRole(user.Id, "Tutor");
+                            break;
+                        case "Student":
+                            UserManager.AddToRole(user.Id, "Student");
+                            break;
+                        default:
+                            break;
+                    }
 
                     AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
                     await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);

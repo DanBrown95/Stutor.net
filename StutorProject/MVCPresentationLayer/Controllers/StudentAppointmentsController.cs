@@ -9,14 +9,26 @@ using System.Web.Mvc;
 using StutorDataObjects;
 using MVCPresentationLayer.Models;
 using StutorLogicLayer;
+using System.Web.Security;
+using System.Web.UI;
 
 namespace MVCPresentationLayer.Controllers
 {
+    [Authorize(Roles = "Tutor")]
     public class StudentAppointmentsController : Controller
     {
         //private ApplicationDbContext db = new ApplicationDbContext();
         TutorManager tutorMgr;
-        User currentUser = new User() { userID = 100000, firstname = "Daniel", lastname = "Brown", role = "Tutor", email = "daniel_brown4@student.kirkwood.edu", active = true, passwordHash = "9c9064c59f1ffa2e174ee754d2979be80dd30db552ec03e7e327e9b1a4bd594e" };
+        UserManager usrMgr = new UserManager();
+        string email = System.Web.HttpContext.Current.User.Identity.Name;
+        User currentUser = null;
+
+        public StudentAppointmentsController()
+        {
+
+            currentUser = usrMgr.GetIndividualStudent(email);
+
+        }
 
         // GET: /StudentAppointments/
         public ActionResult Index()

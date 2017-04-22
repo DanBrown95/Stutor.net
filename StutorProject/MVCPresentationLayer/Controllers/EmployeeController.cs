@@ -12,6 +12,7 @@ using StutorLogicLayer;
 
 namespace MVCPresentationLayer.Controllers
 {
+    [Authorize(Roles="Employee")]
     public class EmployeeController : Controller
     {
         //private ApplicationDbContext db = new ApplicationDbContext();
@@ -19,7 +20,6 @@ namespace MVCPresentationLayer.Controllers
         TutorManager _tutorMgr;
         InterfaceManager _intMgr;
 
-        [Authorize(Roles="Administrator")]
         // GET: /Employee/
         public ActionResult Index()
         {
@@ -30,7 +30,7 @@ namespace MVCPresentationLayer.Controllers
         }
 
         //GET: /Employee/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult Classes(int? id)
         {
             if (id == null)
             {
@@ -102,21 +102,21 @@ namespace MVCPresentationLayer.Controllers
         //    return View(tutors);
         //}
 
-        // GET: /Employee/Delete/5
-        public ActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            InterfaceManager interfaceMgr = new InterfaceManager();
-            Tutors tutors = interfaceMgr.getAllTutors().Find(x => x.TutorID == id);
-            if (tutors == null)
-            {
-                return HttpNotFound();
-            }
-            return View(tutors);
-        }
+        //// GET: /Employee/Delete/5
+        //public ActionResult Delete(int? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+        //    }
+        //    InterfaceManager interfaceMgr = new InterfaceManager();
+        //    Tutors tutors = interfaceMgr.getAllTutors().Find(x => x.TutorID == id);
+        //    if (tutors == null)
+        //    {
+        //        return HttpNotFound();
+        //    }
+        //    return View(tutors);
+        //}
 
         //// POST: /Employee/Delete/5
         //[HttpPost, ActionName("Delete")]

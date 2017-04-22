@@ -12,18 +12,26 @@ using StutorLogicLayer;
 
 namespace MVCPresentationLayer.Controllers
 {
+    [Authorize(Roles = "Tutor, Student")]
     public class TutorAppointmentsController : Controller
     {
         // private ApplicationDbContext db = new ApplicationDbContext();
 
         //User currentUser = SOMEHOW GET THE CURRENT USER
-        User currentUser = new User() { userID = 100001, firstname = "Josh", lastname = "Brown", active = true, email = "jbrown@student.kirkwood.edu", passwordHash = "9c9064c59f1ffa2e174ee754d2979be80dd30db552ec03e7e327e9b1a4bd594e", role = "Student" };
 
+        UserManager usrMgr = new UserManager();
+        string email = System.Web.HttpContext.Current.User.Identity.Name;
+        User currentUser = null;
+
+        public TutorAppointmentsController()
+        {
+            currentUser = usrMgr.GetIndividualStudent(email);
+        }
+        
 
         // GET: TutorAppointments
         public ActionResult Index()
         {
-            //return View(db.StudentAppointments.ToList());
             TutorManager tutorMgr = new TutorManager();
             return View(tutorMgr.GetListTutorAppointments(currentUser.userID));
         }
@@ -37,7 +45,7 @@ namespace MVCPresentationLayer.Controllers
             }
             //StudentAppointments studentAppointments = db.StudentAppointments.Find(id);
             TutorManager tutorMgr = new TutorManager();
-            var appointment = tutorMgr.GetListTutorAppointments(currentUser.userID).Find(x => x.TutoringRequestID == (int)id); 
+            var appointment = tutorMgr.GetListTutorAppointments(currentUser.userID).Find(x => x.TutoringRequestID == (int)id);
             if (appointment == null)
             {
                 return HttpNotFound();
@@ -93,7 +101,7 @@ namespace MVCPresentationLayer.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "ID,Day,Time,SubjectName,StudentFirstname,StudentLastname,Status,TutoringRequestID")] TutorAppointments newAppointment)
         {
-            
+
             if (ModelState.IsValid)
             {
                 //db.Entry(studentAppointments).State = EntityState.Modified;
@@ -117,7 +125,7 @@ namespace MVCPresentationLayer.Controllers
 
                     return View(oldAppointment);
                 }
-                
+
             }
             return View("Edit");
         }
@@ -152,7 +160,7 @@ namespace MVCPresentationLayer.Controllers
             {
                 return View("Index");
             }
-            
+
             //db.StudentAppointments.Remove(studentAppointments);
             //db.SaveChanges();
 

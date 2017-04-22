@@ -256,7 +256,7 @@
     <Content Include="Views\SubjectRequest\Details.cshtml" />
     <Content Include="Views\SubjectRequest\Edit.cshtml" />
     <Content Include="Views\SubjectRequest\Index.cshtml" />
-    <Content Include="Views\Employee\Details.cshtml" />
+    <Content Include="Views\Employee\Classes.cshtml" />
     <Content Include="Views\SubjectRequest\Approve.cshtml" />
     <Content Include="Views\RequestATutor\Create.cshtml" />
     <Content Include="Views\RequestATutor\Delete.cshtml" />

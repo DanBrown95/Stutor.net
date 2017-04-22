@@ -26,3 +26,17 @@ C:\Users\nh229u23\Desktop\New folder\stutor\StutorProject\StutorDataAccess\bin\D
 C:\Users\nh229u23\Desktop\New folder\stutor\StutorProject\StutorDataAccess\obj\Debug\StutorDataAccess.csprojResolveAssemblyReference.cache
 C:\Users\nh229u23\Desktop\New folder\stutor\StutorProject\StutorDataAccess\obj\Debug\StutorDataAccess.dll
 C:\Users\nh229u23\Desktop\New folder\stutor\StutorProject\StutorDataAccess\obj\Debug\StutorDataAccess.pdb
+C:\Users\wolfb\Desktop\test\stutor\StutorProject\StutorDataAccess\bin\Debug\StutorDataAccess.dll
+C:\Users\wolfb\Desktop\test\stutor\StutorProject\StutorDataAccess\bin\Debug\StutorDataAccess.pdb
+C:\Users\wolfb\Desktop\test\stutor\StutorProject\StutorDataAccess\bin\Debug\StutorDataObjects.dll
+C:\Users\wolfb\Desktop\test\stutor\StutorProject\StutorDataAccess\bin\Debug\StutorDataObjects.pdb
+C:\Users\wolfb\Desktop\test\stutor\StutorProject\StutorDataAccess\obj\Debug\StutorDataAccess.csprojResolveAssemblyReference.cache
+C:\Users\wolfb\Desktop\test\stutor\StutorProject\StutorDataAccess\obj\Debug\StutorDataAccess.dll
+C:\Users\wolfb\Desktop\test\stutor\StutorProject\StutorDataAccess\obj\Debug\StutorDataAccess.pdb
+C:\Users\wolfb\Desktop\Stutor\stutor\StutorProject\StutorDataAccess\bin\Debug\StutorDataAccess.dll
+C:\Users\wolfb\Desktop\Stutor\stutor\StutorProject\StutorDataAccess\bin\Debug\StutorDataAccess.pdb
+C:\Users\wolfb\Desktop\Stutor\stutor\StutorProject\StutorDataAccess\bin\Debug\StutorDataObjects.dll
+C:\Users\wolfb\Desktop\Stutor\stutor\StutorProject\StutorDataAccess\bin\Debug\StutorDataObjects.pdb
+C:\Users\wolfb\Desktop\Stutor\stutor\StutorProject\StutorDataAccess\obj\Debug\StutorDataAccess.csprojResolveAssemblyReference.cache
+C:\Users\wolfb\Desktop\Stutor\stutor\StutorProject\StutorDataAccess\obj\Debug\StutorDataAccess.dll
+C:\Users\wolfb\Desktop\Stutor\stutor\StutorProject\StutorDataAccess\obj\Debug\StutorDataAccess.pdb

@@ -14,12 +14,18 @@ namespace MVCPresentationLayer.Controllers
     public class RequestATutorController : Controller
     {
         //private ApplicationDbContext db = new ApplicationDbContext();
+        
 
-        //// GET: /RequestATutor/
-        //public ActionResult Index()
-        //{
-        //    return View(db.ClassTutors.ToList());
-        //}
+        // GET: /RequestATutor/
+        public ActionResult Index()
+        {
+            ClassTutor t1 = new ClassTutor() { email = "dbrown@test", firstname = "dan", lastname = "bRowney", subjectID = 100001, userID = 100000 };
+            ClassTutor t2 = new ClassTutor() { email = "jbrown@test", firstname = "john", lastname = "rooney", subjectID = 100003, userID = 100001 };
+            List<ClassTutor> tlist = new List<ClassTutor>();
+            tlist.Add(t1);
+            tlist.Add(t2);
+            return View(tlist);
+        }
 
         //// GET: /RequestATutor/Details/5
         //public ActionResult Details(int? id)

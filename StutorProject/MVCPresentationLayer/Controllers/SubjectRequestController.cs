@@ -12,6 +12,7 @@ using StutorLogicLayer;
 
 namespace MVCPresentationLayer.Controllers
 {
+    [Authorize]
     public class SubjectRequestController : Controller
     {
         //private ApplicationDbContext db = new ApplicationDbContext();

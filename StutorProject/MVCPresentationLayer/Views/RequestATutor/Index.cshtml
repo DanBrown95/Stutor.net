@@ -1,19 +1,11 @@
 ﻿@model IEnumerable<StutorDataObjects.ClassTutor>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Request A Tutor";
 }
 
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.subjectID)
-        </th>
         <th>
             @Html.DisplayNameFor(model => model.firstname)
         </th>
@@ -29,9 +21,6 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.subjectID)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.firstname)
         </td>
         <td>
@@ -41,9 +30,7 @@
             @Html.DisplayFor(modelItem => item.email)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.userID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.userID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.userID })
+            @Html.ActionLink("Request", "Edit", new { id=item.userID })
         </td>
     </tr>
 }

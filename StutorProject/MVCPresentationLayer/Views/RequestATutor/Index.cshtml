@@ -1,38 +1,18 @@
-﻿@model IEnumerable<StutorDataObjects.ClassTutor>
+﻿@model IEnumerable<StutorDataObjects.SubjectArea>
+
 
 @{
     ViewBag.Title = "Request A Tutor";
 }
 
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.firstname)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.lastname)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.email)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.firstname)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.lastname)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.email)
-        </td>
-        <td>
-            @Html.ActionLink("Request", "Edit", new { id=item.userID })
-        </td>
-    </tr>
+<h1>Select a Subject Area</h1>
+
+
+
+@using (Html.BeginForm("SelectSubject", "RequestATutor", FormMethod.Post))
+{
+    @Html.DropDownList("SubjectAreaName", new SelectList(Model, "SubjectAreaName", "SubjectAreaName"), new { id = "dropdown" })
+
+    <input type="submit" value="Continue" class="btn btn-default" />
 }
-
-</table>

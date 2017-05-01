@@ -33,7 +33,6 @@ namespace MVCPresentationLayer.Controllers
         // GET: /StudentAppointments/
         public ActionResult Index()
         {
-            //return View(db.StudentAppointments.ToList());
             tutorMgr = new TutorManager();
             return View(tutorMgr.GetListStudentAppointments(tutorMgr.GetTutorIDFromUserID(currentUser.userID)));
         }

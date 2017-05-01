@@ -30,6 +30,10 @@ namespace MVCPresentationLayer.Models
             return new ApplicationDbContext();
         }
 
+        public System.Data.Entity.DbSet<StutorDataObjects.Subject> Subjects { get; set; }
+
+        public System.Data.Entity.DbSet<StutorDataObjects.ClassTutor> ClassTutors { get; set; }
+
 
     }
 }

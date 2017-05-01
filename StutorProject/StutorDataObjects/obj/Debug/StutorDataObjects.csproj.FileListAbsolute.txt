@@ -22,3 +22,8 @@ C:\Users\wolfb\Desktop\Stutor\stutor\StutorProject\StutorDataObjects\bin\Debug\S
 C:\Users\wolfb\Desktop\Stutor\stutor\StutorProject\StutorDataObjects\bin\Debug\StutorDataObjects.pdb
 C:\Users\wolfb\Desktop\Stutor\stutor\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.dll
 C:\Users\wolfb\Desktop\Stutor\stutor\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.pdb
+C:\Users\nh229u23\Desktop\Brown\stutor\StutorProject\StutorDataObjects\bin\Debug\StutorDataObjects.dll
+C:\Users\nh229u23\Desktop\Brown\stutor\StutorProject\StutorDataObjects\bin\Debug\StutorDataObjects.pdb
+C:\Users\nh229u23\Desktop\Brown\stutor\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.csprojResolveAssemblyReference.cache
+C:\Users\nh229u23\Desktop\Brown\stutor\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.dll
+C:\Users\nh229u23\Desktop\Brown\stutor\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.pdb

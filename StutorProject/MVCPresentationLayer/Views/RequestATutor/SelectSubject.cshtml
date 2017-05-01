@@ -1,0 +1,14 @@
+﻿@model IEnumerable<StutorDataObjects.Subject>
+
+@{
+    ViewBag.Title = "SelectSubject";
+}
+
+<h2>Select a Subject</h2>
+
+@using (Html.BeginForm("ViewTutors", "RequestATutor", FormMethod.Post))
+{
+    @Html.DropDownList("subjectName", new SelectList(Model, "SubjectName", "SubjectName"), new { id = "dropdown" })
+
+    <input type="submit" value="Continue" class="btn btn-default" />
+}

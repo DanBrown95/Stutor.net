@@ -26,19 +26,21 @@
                         <li>@Html.ActionLink("Current Tutors", "Index", "Employee")</li>
                         <li>@Html.ActionLink("Subject Requests", "Index", "SubjectRequest")</li>
                     }
-                    else if(User.IsInRole("Tutor"))
+                    else if (User.IsInRole("Tutor"))
                     {
-                        <li>@Html.ActionLink("Student Appointments","Index","StudentAppointments")</li>
+                        <li>@Html.ActionLink("Student Appointments", "Index", "StudentAppointments")</li>
                         <li>@Html.ActionLink("Tutor Appointments", "Index", "TutorAppointments")</li>
                         <li>@Html.ActionLink("Request New Subject", "Create", "SubjectRequest")</li>
-                    }
-                    else if(User.IsInRole("Student"))
-                    {
-                        <li>@Html.ActionLink("Tutor Appointments", "Index", "TutorAppointments")</li>
-                        <li>@Html.ActionLink("Request New Subject", "Create", "SubjectRequest")</li>
-                    }
                         <li>@Html.ActionLink("Request A Tutor", "Index", "RequestATutor")</li>
-                                  
+                    }
+                    else if (User.IsInRole("Student"))
+                    {
+                        <li>@Html.ActionLink("Tutor Appointments", "Index", "TutorAppointments")</li>
+                        <li>@Html.ActionLink("Request New Subject", "Create", "SubjectRequest")</li>
+                        <li>@Html.ActionLink("Request A Tutor", "Index", "RequestATutor")</li>
+                    }
+
+
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

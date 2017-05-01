@@ -263,7 +263,8 @@
     <Content Include="Views\RequestATutor\Details.cshtml" />
     <Content Include="Views\RequestATutor\Edit.cshtml" />
     <Content Include="Views\RequestATutor\Index.cshtml" />
-    <Content Include="Views\RequestATutor\_ClassTutorsPartialList.cshtml" />
+    <Content Include="Views\RequestATutor\SelectSubject.cshtml" />
+    <Content Include="Views\RequestATutor\ViewTutors.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

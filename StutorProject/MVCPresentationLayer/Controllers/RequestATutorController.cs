@@ -8,24 +8,52 @@ using System.Web;
 using System.Web.Mvc;
 using StutorDataObjects;
 using MVCPresentationLayer.Models;
+using StutorLogicLayer;
+using System.ComponentModel.DataAnnotations;
 
 namespace MVCPresentationLayer.Controllers
 {
+    [Authorize]
     public class RequestATutorController : Controller
     {
-        //private ApplicationDbContext db = new ApplicationDbContext();
-        
+
+        string email = System.Web.HttpContext.Current.User.Identity.Name;
+        User currentUser;
 
         // GET: /RequestATutor/
         public ActionResult Index()
         {
-            ClassTutor t1 = new ClassTutor() { email = "dbrown@test", firstname = "dan", lastname = "bRowney", subjectID = 100001, userID = 100000 };
-            ClassTutor t2 = new ClassTutor() { email = "jbrown@test", firstname = "john", lastname = "rooney", subjectID = 100003, userID = 100001 };
-            List<ClassTutor> tlist = new List<ClassTutor>();
-            tlist.Add(t1);
-            tlist.Add(t2);
-            return View(tlist);
+            List<SubjectArea> subjectAreas = new List<SubjectArea>();
+            InterfaceManager intMgr = new InterfaceManager();
+            subjectAreas = intMgr.getListSubjectArea();
+
+            return View(subjectAreas);
         }
+
+        public ActionResult SelectSubject(string SubjectAreaName)
+        {
+
+            List<Subject> subjects = new List<Subject>();
+            InterfaceManager intmgr = new InterfaceManager();
+            subjects = intmgr.getListSubject(SubjectAreaName);
+
+            return View(subjects);
+        }
+
+        public ViewResult ViewTutors(string subjectName)
+        {
+            
+            UserManager usrmgr = new UserManager();
+            currentUser = usrmgr.GetIndividualStudent(email);
+
+            List<ClassTutor> tutors = new List<ClassTutor>();
+            InterfaceManager intMgr = new InterfaceManager();
+            
+            tutors = intMgr.getClassTutors(subjectName, currentUser.userID);
+            
+            return View(tutors);
+        }
+
 
         //// GET: /RequestATutor/Details/5
         //public ActionResult Details(int? id)

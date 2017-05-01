@@ -52,3 +52,12 @@ C:\Users\wolfb\Desktop\Stutor\stutor\StutorProject\StutorLogicLayer\bin\Debug\St
 C:\Users\wolfb\Desktop\Stutor\stutor\StutorProject\StutorLogicLayer\obj\Debug\StutorLogicLayer.csprojResolveAssemblyReference.cache
 C:\Users\wolfb\Desktop\Stutor\stutor\StutorProject\StutorLogicLayer\obj\Debug\StutorLogicLayer.dll
 C:\Users\wolfb\Desktop\Stutor\stutor\StutorProject\StutorLogicLayer\obj\Debug\StutorLogicLayer.pdb
+C:\Users\nh229u23\Desktop\Brown\stutor\StutorProject\StutorLogicLayer\bin\Debug\StutorLogicLayer.dll
+C:\Users\nh229u23\Desktop\Brown\stutor\StutorProject\StutorLogicLayer\bin\Debug\StutorLogicLayer.pdb
+C:\Users\nh229u23\Desktop\Brown\stutor\StutorProject\StutorLogicLayer\bin\Debug\StutorDataAccess.dll
+C:\Users\nh229u23\Desktop\Brown\stutor\StutorProject\StutorLogicLayer\bin\Debug\StutorDataObjects.dll
+C:\Users\nh229u23\Desktop\Brown\stutor\StutorProject\StutorLogicLayer\bin\Debug\StutorDataAccess.pdb
+C:\Users\nh229u23\Desktop\Brown\stutor\StutorProject\StutorLogicLayer\bin\Debug\StutorDataObjects.pdb
+C:\Users\nh229u23\Desktop\Brown\stutor\StutorProject\StutorLogicLayer\obj\Debug\StutorLogicLayer.csprojResolveAssemblyReference.cache
+C:\Users\nh229u23\Desktop\Brown\stutor\StutorProject\StutorLogicLayer\obj\Debug\StutorLogicLayer.dll
+C:\Users\nh229u23\Desktop\Brown\stutor\StutorProject\StutorLogicLayer\obj\Debug\StutorLogicLayer.pdb

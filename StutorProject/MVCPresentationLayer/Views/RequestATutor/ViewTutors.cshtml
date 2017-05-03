@@ -4,11 +4,8 @@
     ViewBag.Title = "ViewTutors";
 }
 
-<h2>ViewTutors</h2>
+<h2>Available Tutors</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table class="table">
     <tr>
         <th>
@@ -41,9 +38,7 @@
             @Html.DisplayFor(modelItem => item.email)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.userID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.userID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.userID })
+            @Html.ActionLink("Request", "SendRequest", new { id=item.userID, subjectId = item.subjectID }) 
         </td>
     </tr>
 }

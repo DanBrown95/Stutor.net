@@ -8,7 +8,9 @@
 
 <div>
     <h4>ClassTutor</h4>
-	<hr />
+    <hr />
+    @Html.BeginForm(){
+
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.subjectID)
@@ -41,10 +43,27 @@
         <dd>
             @Html.DisplayFor(model => model.email)
         </dd>
-
+        <dt>
+            Date
+        </dt>
+        <dd>
+            @Html.EditorFor(model => model.Date, new { id = "date" })
+        </dd>
+        <dt>
+            Time
+        </dt>
+        <dd>
+            @Html.EditorFor(model => model.Time, new { id = "time" })
+        </dd>
     </dl>
+
+
+    }
+
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.userID }) |
+    @Html.ActionLink("Send", "SendRequest", new { id = Model.userID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+
+

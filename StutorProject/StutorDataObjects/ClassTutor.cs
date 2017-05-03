@@ -20,5 +20,8 @@ namespace StutorDataObjects
 
         public string email { get; set; }
 
+        public string Date { get; set; }
+
+        public string Time { get; set; }
     }
 }

@@ -265,6 +265,7 @@
     <Content Include="Views\RequestATutor\Index.cshtml" />
     <Content Include="Views\RequestATutor\SelectSubject.cshtml" />
     <Content Include="Views\RequestATutor\ViewTutors.cshtml" />
+    <Content Include="Views\RequestATutor\SendRequest.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -55,20 +55,57 @@ namespace MVCPresentationLayer.Controllers
         }
 
 
-        //// GET: /RequestATutor/Details/5
-        //public ActionResult Details(int? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-        //    }
-        //    ClassTutor classtutor = db.ClassTutors.Find(id);
-        //    if (classtutor == null)
-        //    {
-        //        return HttpNotFound();
-        //    }
-        //    return View(classtutor);
-        //}
+        // GET: /RequestATutor/SendRequest/5
+        public ActionResult SendRequest(int? id, int subjectId)
+        {
+            UserManager usrmgr = new UserManager();
+            currentUser = usrmgr.GetIndividualStudent(email);
+
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            
+            InterfaceManager intMgr = new InterfaceManager();
+            var subjectName = intMgr.GetSubjectNameWithSubjectId(subjectId);
+            ClassTutor classTutor = intMgr.getClassTutors(subjectName, currentUser.userID).Find(x => x.userID == id);
+             
+
+            if (classTutor == null)
+            {
+                return HttpNotFound();
+            }
+            return View(classTutor);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult SendRequest(ClassTutor classTutor)
+        {
+            if (ModelState.IsValid)
+            {
+                UserManager usrmgr = new UserManager();
+                currentUser = usrmgr.GetIndividualStudent(email);
+
+                TutorManager tutMgr = new TutorManager();
+                
+                try
+                {
+                    var tutorId = tutMgr.GetTutorIDFromUserID(classTutor.userID);
+
+                    tutMgr.CreateTutoringRequest(currentUser.userID, tutorId, classTutor.subjectID, classTutor.Date, classTutor.Time);
+                    return View("Index");
+                }catch(Exception ex){
+
+                    return new HttpStatusCodeResult(HttpStatusCode.InternalServerError);
+                }
+
+                
+            }
+
+            return View();
+        }
+
 
         //// GET: /RequestATutor/Create
         //public ActionResult Create()

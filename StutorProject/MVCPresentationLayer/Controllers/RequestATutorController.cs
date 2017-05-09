@@ -48,8 +48,15 @@ namespace MVCPresentationLayer.Controllers
 
             List<ClassTutor> tutors = new List<ClassTutor>();
             InterfaceManager intMgr = new InterfaceManager();
-            
-            tutors = intMgr.getClassTutors(subjectName, currentUser.userID);
+
+            try
+            {
+                tutors = intMgr.getClassTutors(subjectName, currentUser.userID);
+            }
+            catch (Exception ex)
+            {
+
+            }
             
             return View(tutors);
         }

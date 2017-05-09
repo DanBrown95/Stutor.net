@@ -12,7 +12,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>Student Appointment</h4>
+        <br />
         <hr />
         @Html.ValidationSummary(true)
         @Html.HiddenFor(model => model.ID)
@@ -83,7 +83,7 @@
 }
 
 <div>
-    @Html.ActionLink("Back to Appointments", "Index")
+    @Html.ActionLink("Back to Appointments", "Index", null, new { @class = "btn btn-xs btn-danger"})
 </div>
 
 @section Scripts {

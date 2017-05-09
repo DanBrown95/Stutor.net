@@ -23,14 +23,57 @@ textarea {
     max-width: 280px;
 }
 
-navbar-header {
-   background-color: aqua;
+.navbar-inverse{
+   background-color: #000033;
 }
 
 h1{
     font-family: Tahoma, Geneva, sans-serif;
+    color: orange;
 }
 
 p{
     font-family: Tahoma, Geneva, sans-serif;
+}
+
+h2{
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #F58B4C;
+}
+
+.banner-h2{
+    color: white;
+}
+
+.blocks{
+    border-left:1em solid white;
+    background-color: #43ABC9;
+}
+
+.main-banner{
+    background-color: #F58B4C;
+}
+
+.jumbotron > h1{
+    color: white;
+}
+.jumbotron > p{
+    color: white;
+}
+
+th {
+    background-color: #43ABC9;
+    color: white;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+td{
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #107896;
+}
+
+.form-control{
+    font-family: Tahoma, Geneva;
+    color: #1496BB;
+    border-color: none;
 }

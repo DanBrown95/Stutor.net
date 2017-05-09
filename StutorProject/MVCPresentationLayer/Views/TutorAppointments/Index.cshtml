@@ -20,7 +20,7 @@
 }
 else
 {
-    <h2>Classes you currently have a tutor for:</h2>
+    <h2>Classes you currently have a tutor for</h2>
     <div class="panel-body">
     <table class="table table-striped table-bordered display" id="tutorTable">
         <thead>
@@ -69,9 +69,9 @@ else
                         @Html.DisplayFor(modelItem => item.Status)
                     </td>
                     <td>
-                        @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                        @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-                        @Html.ActionLink("Drop", "Delete", new { id = item.ID })
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-xs btn-primary"}) |
+                        @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-xs btn-primary" }) |
+                        @Html.ActionLink("Drop", "Delete", new { id = item.ID }, new { @class = "btn btn-xs btn-danger" })
                     </td>
                 </tr>
             }
@@ -109,7 +109,7 @@ else
                      { width: '10%' },
                      { width: '10%' },
                      { width: '5%' },
-                     { width: '8%', className: 'text-center' }
+                     { width: '10%', className: 'text-center' }
                  ]
              });
  

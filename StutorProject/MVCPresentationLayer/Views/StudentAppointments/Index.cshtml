@@ -9,7 +9,7 @@
     ViewBag.Title = "Tutoring Appointments";
 }
 
-<h2>Students you are currently tutoring: </h2>
+<h2>Students you are currently tutoring </h2>
 
 <p>
     
@@ -76,7 +76,7 @@ else
                     </td>
                     <td>
                         @Html.ActionLink("Approve / Deny", "Edit", new { id = item.ID }, new { @class = "btn btn-xs btn-primary" }) |
-                        @Html.ActionLink("Drop", "Delete", new { id = item.ID }, new { @class = "bt btn-xs btn-danger" })
+                        @Html.ActionLink("Drop", "Delete", new { id = item.ID }, new { @class = "bt btn-xs btn-danger"  })
                     </td>
                 </tr>
             }

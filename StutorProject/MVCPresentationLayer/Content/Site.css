@@ -22,3 +22,15 @@ select,
 textarea {
     max-width: 280px;
 }
+
+navbar-header {
+   background-color: aqua;
+}
+
+h1{
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+p{
+    font-family: Tahoma, Geneva, sans-serif;
+}

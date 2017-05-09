@@ -43,8 +43,8 @@ else
             @Html.DisplayFor(modelItem => item.subjectName)
         </td>
         <td>
-            @Html.ActionLink("Approve", "Approve", new { id=item.SubjectRequestID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.SubjectRequestID })
+            @Html.ActionLink("Approve", "Approve", new { id = item.SubjectRequestID }, new { @class = "btn btn-primary btn-xs" }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.SubjectRequestID }, new { @class = "btn btn-danger btn-xs" })
         </td>
     </tr>
 }

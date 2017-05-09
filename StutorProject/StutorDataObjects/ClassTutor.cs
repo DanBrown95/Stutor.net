@@ -13,11 +13,11 @@ namespace StutorDataObjects
         public int userID { get; set; }
 
         public int subjectID { get; set; }
-
+        [Display(Name = "First Name")]
         public string firstname { get; set; }
-
+        [Display(Name = "Last Name")]
         public string lastname { get; set; }
-
+        [Display(Name = "Email")]
         public string email { get; set; }
 
         public string Date { get; set; }

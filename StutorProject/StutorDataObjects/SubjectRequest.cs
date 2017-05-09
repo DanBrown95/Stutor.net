@@ -12,8 +12,9 @@ namespace StutorDataObjects
         [Key]
         public int SubjectRequestID { get; set; }
 
+        [Display(Name = "Subject Area")]
         public string subjectAreaName { get; set; }
-      
+        [Display(Name = "Subject")]
         public string subjectName { get; set; }
 
     }

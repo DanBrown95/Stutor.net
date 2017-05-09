@@ -26,3 +26,7 @@ C:\Users\nh229u23\Desktop\Brown\stutor\StutorProject\StutorDataObjects\bin\Debug
 C:\Users\nh229u23\Desktop\Brown\stutor\StutorProject\StutorDataObjects\bin\Debug\StutorDataObjects.pdb
 C:\Users\nh229u23\Desktop\Brown\stutor\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.dll
 C:\Users\nh229u23\Desktop\Brown\stutor\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.pdb
+C:\Users\wolfb\Desktop\stutor\StutorProject\StutorDataObjects\bin\Debug\StutorDataObjects.dll
+C:\Users\wolfb\Desktop\stutor\StutorProject\StutorDataObjects\bin\Debug\StutorDataObjects.pdb
+C:\Users\wolfb\Desktop\stutor\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.dll
+C:\Users\wolfb\Desktop\stutor\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.pdb

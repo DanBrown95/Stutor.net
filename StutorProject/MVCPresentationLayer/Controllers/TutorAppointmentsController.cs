@@ -15,9 +15,6 @@ namespace MVCPresentationLayer.Controllers
     [Authorize(Roles = "Tutor, Student")]
     public class TutorAppointmentsController : Controller
     {
-        // private ApplicationDbContext db = new ApplicationDbContext();
-
-        //User currentUser = SOMEHOW GET THE CURRENT USER
 
         UserManager usrMgr = new UserManager();
         string email = System.Web.HttpContext.Current.User.Identity.Name;
@@ -52,29 +49,6 @@ namespace MVCPresentationLayer.Controllers
             }
             return View(appointment);
         }
-
-        //// GET: TutorAppointments/Create
-        //public ActionResult Create()
-        //{
-        //    return View();
-        //}
-
-        //// POST: StudentAppointments/Create
-        //// To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        //// more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Create([Bind(Include = "ID,Day,Time,SubjectName,StudentFirstname,StudentLastname,Status,TutoringRequestID")] StudentAppointments studentAppointments)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        db.StudentAppointments.Add(studentAppointments);
-        //        db.SaveChanges();
-        //        return RedirectToAction("Index");
-        //    }
-
-        //    return View(studentAppointments);
-        //}
 
         // GET: StudentAppointments/Edit/5
         public ActionResult Edit(int? id)
@@ -167,13 +141,6 @@ namespace MVCPresentationLayer.Controllers
             return HttpNotFound();
         }
 
-        //protected override void Dispose(bool disposing)
-        //{
-        //    if (disposing)
-        //    {
-        //        db.Dispose();
-        //    }
-        //    base.Dispose(disposing);
-        //}
+
     }
 }

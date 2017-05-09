@@ -4,30 +4,29 @@
 @Styles.Render("~/Content/css")
 
 
+<div class="jumbotron main-banner" style="background: url('/Images/bookBanner.jpg') no-repeat center center;">
+    <h1> <br /> </h1>
+    <p class="lead"> <br /> </p>
+</div>
 <div class="jumbotron main-banner">
     <h1>Stutor</h1>
     <p class="lead">Stutor is a free web application that allows students to connect with student tutors within their university.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
+        <h2>What is Stutor</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            Stutor is a platform for college students to offer their tutoring services to other students and manage their schedule.
         </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>As a Tutor</h2>
+        <p>Not only will being a tutor allow you to continue learning in a specific subject, but will allow you to gain valuable experience as a teacher and not to mention, it will look great on your resume!.</p>
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <h2>How do I get Started?</h2>
+        <p>Click the register button bellow. It's as easy as that!</p>
+        <p>@Html.ActionLink("Get Started","Register", "Account", null, new { @class = "btn btn-default" })</p>        
     </div>
 </div>

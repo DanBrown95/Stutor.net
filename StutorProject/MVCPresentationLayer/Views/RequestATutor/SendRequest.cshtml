@@ -1,5 +1,8 @@
 ﻿@model StutorDataObjects.ClassTutor
 
+
+
+
 @{
     ViewBag.Title = "SendRequest";
 }
@@ -51,7 +54,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Date, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Date, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Date, new { htmlAttributes = new { @class = "form-control datepicker" } })
                 @Html.ValidationMessageFor(model => model.Date, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -66,12 +69,30 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </div>
     </div>
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-xs btn-danger"})
 </div>
+
+
+@section scripts{
+   
+    
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css" />
+    <script>
+
+     var $j = jQuery.noConflict();
+
+     $(function () {
+         $( ".datepicker" ).datepicker();
+     });
+
+    </script>
+    
+    
+}

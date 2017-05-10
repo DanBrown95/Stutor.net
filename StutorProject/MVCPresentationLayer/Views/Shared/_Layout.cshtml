@@ -58,8 +58,43 @@
         </footer>
     </div>
 
+
+
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
+    <script>
+        $.noConflict();
+        $(document).ready(function () {
+
+
+            $('.stutorT').DataTable({
+                stateSave: true,
+                language: {
+                    searchPlaceholder: "Search",
+                    search: "_INPUT_",
+                    zeroRecords: "No data available",
+                    sLengthMenu: "_MENU_"
+                },
+                lengthMenu: [
+                    [1, 5, 10, -1],
+                    ['1', '5', '10', 'Show all']
+                ],
+                buttons: [
+                    'pageLength'
+                ],
+                columns: [
+                    { width: '10%' },
+                    { width: '10%' },
+                    { width: '10%' },
+                    { width: '10%', className: 'text-center' }
+                ]
+            });
+
+        });
+
+    </script>
+
 </body>
 </html>

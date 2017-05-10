@@ -1,40 +1,50 @@
 ﻿@model IEnumerable<StutorDataObjects.ClassTutor>
 
+                      <script src="~/Scripts/jquery-1.10.2.js" type="text/javascript"></script>
+                      <script src="~/Scripts/DataTables/jquery.dataTables.js" type="text/javascript"></script>
+                      <script src="~/Scripts/DataTables/dataTables.bootstrap.js" type="text/javascript"></script>
+
 @{
     ViewBag.Title = "ViewTutors";
 }
 
 <h2>Available Tutors</h2>
 
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.firstname)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.lastname)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.email)
-        </th>
-        <th></th>
-    </tr>
+<div class="panel-body">
+    <table class="table table-bordered table-striped display stutorT">
+        <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.firstname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.lastname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th></th>
+        </tr>
+            </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.firstname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.lastname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.email)
+                </td>
+                <td>
+                    @Html.ActionLink("Request", "SendRequest", new { id = item.userID, subjectId = item.subjectID })
+                </td>
+            </tr>
+        }
+            </tbody>
+    </table>
+    </div>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.firstname)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.lastname)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.email)
-        </td>
-        <td>
-            @Html.ActionLink("Request", "SendRequest", new { id=item.userID, subjectId = item.subjectID }) 
-        </td>
-    </tr>
-}
-
-</table>

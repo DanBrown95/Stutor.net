@@ -78,14 +78,12 @@
     @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-xs btn-danger"})
 </div>
 
-
+<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css" />
 @section scripts{
    
-    
-    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css" />
     <script>
-
-     var $j = jQuery.noConflict();
+        
+     
 
      $(function () {
          $( ".datepicker" ).datepicker();

@@ -31,3 +31,4 @@ C:\Users\wolfb\Desktop\stutor\StutorProject\StutorDataObjects\bin\Debug\StutorDa
 C:\Users\wolfb\Desktop\stutor\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.dll
 C:\Users\wolfb\Desktop\stutor\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.pdb
 C:\Users\nh229u23\Desktop\Brown\stutor\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.csprojResolveAssemblyReference.cache
+C:\Users\wolfb\Desktop\Stutor\StutorProject\StutorDataObjects\obj\Debug\StutorDataObjects.csprojResolveAssemblyReference.cache

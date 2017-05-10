@@ -37,7 +37,19 @@ GO
 INSERT INTO [dbo].[User]
 			([Firstname], [Lastname], [Email], [Role])
 			Values
-			('Dan', 'Brown', 'daniel_brown4@student.kirkwood.edu', 'Tutor'),('Josh','Brown','jbrown@student.kirkwood.edu', 'Student'),('Evan','Male','emale@kirkwood.edu','Employee')
+			('Dan', 'Brown', 'daniel_brown4@student.kirkwood.edu', 'Tutor'),('Josh','Brown','jbrown@student.kirkwood.edu', 'Student'),			('Evan','Male','emale@kirkwood.edu','Employee')
+			,('Steve','Burman','sburman@student.kirkwood.edu', 'Tutor')
+			,('Jake','Dyllon','jdyllon@student.kirkwood.edu', 'Tutor')
+			,('Sarah','Maddison','smaddison@student.kirkwood.edu', 'Tutor')
+			,('Ashley','Blake','ablake@student.kirkwood.edu', 'Tutor')
+			,('Riley','Styne','rstyne@student.kirkwood.edu', 'Tutor')
+			,('Tina','Turner','tturner@student.kirkwood.edu', 'Tutor')
+			,('Samantha','Ion','sion@student.kirkwood.edu', 'Tutor')
+			,('Jordan','lively','jlively@student.kirkwood.edu', 'Tutor')
+			,('Chris','Samuels','csamuels@student.kirkwood.edu', 'Tutor')
+			,('Jarryd','mowet','jmowet@student.kirkwood.edu', 'Tutor')
+			,('Aaron','brown','abrown@student.kirkwood.edu', 'Tutor')
+			,('Brad','Garret','bgarret@student.kirkwood.edu', 'Tutor')
 GO
 
 print '' print '*** Creating Tutor Table ***'
@@ -57,9 +69,7 @@ INSERT INTO [dbo].[Tutor]
 		UserID
 		)
 		VALUES
-		(
-		100000
-		)
+		(100000),(100003),(100004),(100005),(100006),(100007),(100008),(100009),(100010),(100011),(100012),(100013),(100014)
 GO
 
 print '' print '*** Create Role Table ***'
@@ -170,7 +180,14 @@ GO
 INSERT INTO [dbo].[TutoringRequest] 
 	([UserID], [TutorID], [SubjectID], [Day], [Time], [Status]) 
 	VALUES 
-	(100001, 100000, 100001, N'2016-12-20', N'9:27 PM', N'Pending')
+	(100001, 100000, 100001, '2016-04-20', '9:27 PM', N'Pending'),
+	(100001, 100001, 100001, '2016-04-20', '9:00 PM', N'Pending'),
+	(100001, 100002, 100001, '2016-04-11', '6:00 PM', N'Pending'),
+	(100001, 100003, 100001, '2016-04-08', '4:00 PM', N'Pending'),
+	(100001, 100004, 100001, '2016-04-09', '4:20 PM', N'Pending'),
+	(100001, 100005, 100001, '2016-04-13', '5:50 PM', N'Pending'),
+	(100001, 100006, 100001, '2016-04-16', '3:20 PM', N'Pending'),
+	(100001, 100007, 100001, '2016-04-20', '3:30 PM', N'Pending')
 GO
 
 print'' print '*** creating sp_edit_tutoring_request ***'
@@ -285,7 +302,7 @@ GO
 INSERT INTO [dbo].[ClassTutors]
 		([UserID],[SubjectID])
 		VALUES
-		('100000','100001')
+		('100000','100001'),('100003','100001'),('100004','100001'),('100005','100001'),('100006','100001'),('100007','100001'),('100008','100001'),('100009','100001'),('100010','100001'),('100011','100001'),('100012','100001'),('100013','100001'),('100014','100001')
 GO
 
 

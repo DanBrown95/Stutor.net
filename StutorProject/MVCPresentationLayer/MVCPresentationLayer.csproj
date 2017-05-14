@@ -159,6 +159,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BecomeATutorController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -175,6 +176,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AreaAndSubject.cs" />
     <Compile Include="Models\ClassTutorsViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -493,6 +495,10 @@
     <Content Include="Views\RequestATutor\ViewTutors.cshtml" />
     <Content Include="Views\RequestATutor\SendRequest.cshtml" />
     <Content Include="Views\StudentAppointments\Edit.cshtml" />
+    <Content Include="Views\BecomeATutor\SubjectAreaPartial.cshtml" />
+    <Content Include="Views\BecomeATutor\SelectSubjectPartial.cshtml" />
+    <Content Include="Views\BecomeATutor\Index.cshtml" />
+    <Content Include="Views\BecomeATutor\Request.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

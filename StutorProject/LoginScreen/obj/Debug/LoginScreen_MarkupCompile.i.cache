@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\wolfb\Desktop\Stutor\StutorProject\LoginScreen\obj\Debug\
+C:\Users\dan\Desktop\stutor\StutorProject\LoginScreen\obj\Debug\
 LoginScreen
 none
 false
 DEBUG;TRACE
-C:\Users\wolfb\Desktop\Stutor\StutorProject\LoginScreen\App.xaml
+C:\Users\dan\Desktop\stutor\StutorProject\LoginScreen\App.xaml
 13394731988
 
-22-112753274
-171960703087
+22-617151727
+171620802373
 About.xaml;ActiveStudentRequest.xaml;ActiveTutor.xaml;ChangePassword.xaml;CreateAccount.xaml;LoggedIn.xaml;MainWindow.xaml;NewStudentRequest.xaml;RequestNewClass.xaml;SubjectRequestApproval.xaml;TutorApplication.xaml;TutorApprovalDialog.xaml;TutorRequest.xaml;
 
 True

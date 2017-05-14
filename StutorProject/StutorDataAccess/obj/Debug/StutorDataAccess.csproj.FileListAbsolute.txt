@@ -54,3 +54,10 @@ C:\Users\wolfb\Desktop\stutor\StutorProject\StutorDataAccess\bin\Debug\StutorDat
 C:\Users\wolfb\Desktop\stutor\StutorProject\StutorDataAccess\obj\Debug\StutorDataAccess.csprojResolveAssemblyReference.cache
 C:\Users\wolfb\Desktop\stutor\StutorProject\StutorDataAccess\obj\Debug\StutorDataAccess.dll
 C:\Users\wolfb\Desktop\stutor\StutorProject\StutorDataAccess\obj\Debug\StutorDataAccess.pdb
+C:\Users\dan\Desktop\stutor\StutorProject\StutorDataAccess\bin\Debug\StutorDataAccess.dll
+C:\Users\dan\Desktop\stutor\StutorProject\StutorDataAccess\bin\Debug\StutorDataAccess.pdb
+C:\Users\dan\Desktop\stutor\StutorProject\StutorDataAccess\bin\Debug\StutorDataObjects.dll
+C:\Users\dan\Desktop\stutor\StutorProject\StutorDataAccess\bin\Debug\StutorDataObjects.pdb
+C:\Users\dan\Desktop\stutor\StutorProject\StutorDataAccess\obj\Debug\StutorDataAccess.csprojResolveAssemblyReference.cache
+C:\Users\dan\Desktop\stutor\StutorProject\StutorDataAccess\obj\Debug\StutorDataAccess.dll
+C:\Users\dan\Desktop\stutor\StutorProject\StutorDataAccess\obj\Debug\StutorDataAccess.pdb

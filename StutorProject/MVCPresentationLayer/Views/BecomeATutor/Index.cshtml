@@ -1,0 +1,48 @@
+﻿@model MVCPresentationLayer.Models.AreaAndSubject
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Become A Tutor</h2>
+
+
+@{
+    int subjectAreaid = 0;
+}
+
+<p>
+    <div>
+        @Html.Partial("SubjectAreaPartial", Model.SubjectAreas.ToList())
+    </div>
+    <div>
+        @Html.Partial("SelectSubjectPartial", Model.Subjects.ToList().Where(x => x.SubjectAreaID == subjectAreaid))
+    </div>
+
+</p>
+
+@section scripts {
+
+    <script>
+
+        $(document).ready({
+
+           
+        });
+        
+
+        $(".subjectArea").change(function () {
+            
+            subjectAreaid = $(this).val();
+            
+            //Reload the selectSubject partial to take in the new subjectAreaId
+            // ???????????????
+            $(".subject").load(".subject");
+            
+        });
+
+
+    </script>
+
+
+}

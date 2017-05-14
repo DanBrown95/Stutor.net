@@ -1,0 +1,17 @@
+﻿@model IEnumerable<StutorDataObjects.SubjectArea>
+
+
+@{
+    ViewBag.Title = "Become A Tutor";
+}
+
+
+<h2>Select a Subject Area</h2>
+
+
+
+@using (Html.BeginForm("SelectSubject", "RequestATutor", FormMethod.Post))
+{
+    @Html.DropDownList("SubjectAreaName", new SelectList(Model, "SubjectAreaID", "SubjectAreaName"), new { @class = "form-control subjectArea" })
+
+}
